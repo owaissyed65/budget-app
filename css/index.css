@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --box-color: #046E8F;
+    --white-color: #ffffff;
+    --color1: #1C77C3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1298px;
+    margin: 0 auto;
+}
+
+.budget-Expenses {
+    display: flex;
+    margin-top: .7rem;
+    gap: 3rem;
+    font-size: 1.6rem;
+    width: 50%;
+    min-height: 20rem;
+}
+
+.bud-exp {
+    width: 50%;
+    -webkit-border-radius: 49px;
+    border-radius: 45px;
+    background: var(--box-color);
+    -webkit-box-shadow: 8px 8px 19px #bbbbbb, -8px -8px 19px #ffffff;
+    box-shadow: 8px 8px 19px #bbbbbb, -8px -8px 19px #ffffff;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bud-exp h3 {
+    margin-top: .6rem;
+    letter-spacing: .2rem;
+}
+
+.bud-exp .budInp {
+    height: 70%;
+    width: 80%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    transform: scale(.9, .9);
+}
+
+.bud-exp .input input {
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+.bud-exp .input button,
+.bud-exp .expInput button {
+    height: 30%;
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+    color: var(--white-color);
+    background-color: var(--color1);
+    margin-left: auto;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.bud-exp .expInput input {
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+.prop{
+    color: red;
+    font-size: 12px;
+}
+.not {
+    display: none;
+}
+
+.calculatedBox {
+    width: 70%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.calcBox {
+    background-color: var(--box-color);
+    min-height: 7rem;
+    border-radius: 10px;
+    margin-top: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: .5rem;
+    color: var(--white-color);
+}
+
+.bud_upd {
+    display: flex;
+    gap: 5px;
+}
+
+.calcBox .bud_upd div {
+    text-align: center;
+    margin: 0 0px;
+    /* background-color: black; */
+}
+
+.calcBox .bud_upd .budget_update {
+    cursor: pointer;
+    transition: transform 0.12s;
+}
+
+.calcBox .bud_upd .budget_update:active {
+    transform: scale(0.87, 0.87);
+}
+
+.calcBox div {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.calcBox div h5 {
+    letter-spacing: .2rem;
+}
+
+.expenseList {
+    width: 70%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.loopList {
+    background-color: var(--box-color);
+    min-width: 40%;
+    min-height: 6rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: .5rem;
+    color: var(--white-color);
+    position: relative;
+}
+
+
+.loopList div {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.loopList div h5 {
+    letter-spacing: .2rem;
+}
+
+.yes {
+    display: block;
+}
+
+.d-u {
+    background-color: var(--color1);
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    right: -40px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dlt,
+.update {
+    transition: transform 0.6s;
+    transform: scale(1, 1);
+    border-top-right-radius: 10px;
+    width: 90%;
+    height: 45%;
+    /* background-color: yellow; */
+
+}
+
+.border {
+    border-bottom: 1px solid black;
+}
+
+.dlt:active,
+.update:active {
+    transform: scale(0.8, 0.8);
+}

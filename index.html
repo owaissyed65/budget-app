@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Budget App</title>
+    </head>
+    <body>
+        <h1 style="font-size: 26px;">Budget - App</h1>
+        <div class="budget-Expenses">
+            <!-- for budget -->
+            <div class="budget bud-exp">
+                <h3>Set Budget</h3>
+                <div class="input budInp">
+                    <input type="number" placeholder="Please Enter Your Monthly
+                        Salary" required id="monthSalary">
+                    <p class="prop not" id="validation1">Please Add Budget or
+                        click on update salary</p>
+                    <button id="setSalary">Set Budget</button>
+                </div>
+            </div>
+            <!-- for expenses -->
+            <div class="expenses bud-exp">
+                <h3>Set Expenses</h3>
+                <div class="expInput budInp">
+                    <input id="expName" class="expClass" type="text"
+                        placeholder="Please Enter a Expense Name"
+                        required>
+                    <input id="expPrice" class="expClass" type="number"
+                        placeholder="Please Enter a Expense Price" required>
+                    <p class="prop not" id="validation">Please set According to
+                        budget or an expenses</p>
+                    <button id="setExpenses">Set Expenses</button>
+                </div>
+            </div>
+        </div>
+        <!-- for calculated box -->
+        <div class="calculatedBox">
+            <h3>Calculated Expenses from budget</h3>
+            <div class="calcBox">
+                <div class="bud_upd">
+                    <div>
+                        <h5>Total Budget</h5>
+                        <span id="tBudget">0</span>
+                    </div>
+                    <div class="budget_update not" id='budget_update'>&#9998;</div>
+                </div>
+                <div>
+                    <h5>Total Expenses</h5>
+                    <span id="tExpenses">0</span>
+                </div>
+                <div>
+                    <h5>Total Value</h5>
+                    <span id="tValue">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- for expense list -->
+        <div class="expenseList">
+            <h3>Expenses List</h3>
+            <div class="list" id="list">
+                <!-- <div class="loopList" id="loopList">
+                    <div>
+                        <h5>Name</h5>
+                        <span>Mango</span>
+                    </div>
+                    <div>
+                        <h5>Price</h5>
+                        <span>100</span>
+                    </div>
+                    <div class="d-u">
+                        <div class="dlt border">X</div>
+                        <div class="update">&#9998;</div>
+                    </div>
+                </div> -->
+                <!-- <div class="loopList">
+                    <div>
+                        <h5>Name</h5>
+                        <span>Mango</span>
+                    </div>
+                    <div>
+                        <h5>Price</h5>
+                        <span>100</span>
+                    </div>
+                </div>
+                <div class="loopList">
+                    <div>
+                        <h5>Name</h5>
+                        <span>Mango</span>
+                    </div>
+                    <div>
+                        <h5>Price</h5>
+                        <span>100</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

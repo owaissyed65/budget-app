@@ -69,6 +69,10 @@ setSalary.addEventListener('click', () => {
 budget_update.addEventListener('click', () => {
     monthSalary.value = budget.salary
     check = true
+    monthSalary.scrollIntoView({
+        behavior: "smooth",
+        block: 'center'
+    });
 })
 setExpenses.addEventListener('click', () => {
     let expense = {

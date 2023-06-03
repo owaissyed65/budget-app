@@ -167,6 +167,10 @@ const looping = (budget) => {
             let ft = budget.expense.filter((p) => p.id !== Number(e.target.id))
             budget.expense = [...ft]
             looping(budget)
+            budget.totalExpense = budget.expense.reduce((acc, curEle) => acc + curEle.expPrice, 0);
+            budget.totalVal = budget.salary - budget.totalExpense;
+            tExpenses.innerText = budget.totalExpense;
+            tValue.innerHTML = budget.totalVal
             if (budget.expense.length === 0) {
                 list.innerHTML = "Sorry there is No Any List"
             }

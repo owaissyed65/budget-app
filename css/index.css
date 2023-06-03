@@ -112,10 +112,11 @@ button:active {
 }
 
 
-.prop{
+.prop {
     color: red;
     font-size: 12px;
 }
+
 .not {
     display: none;
 }
@@ -218,7 +219,7 @@ button:active {
     height: 100%;
     width: 10%;
     position: absolute;
-    right: -40px;
+    right: -12%;
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -247,4 +248,71 @@ button:active {
 .dlt:active,
 .update:active {
     transform: scale(0.8, 0.8);
+}
+
+@media screen and (max-width:728px) {
+    .budget-Expenses {
+        flex-direction: column;
+        margin-top: 0rem;
+        gap: 3rem;
+        font-size: 1.2rem;
+        width: 100%;
+        align-items: center;
+        min-height: 25rem;
+    }
+
+    .bud-exp {
+        width: 60%;
+        min-height: 9rem;
+        -webkit-border-radius: 49px;
+        border-radius: 20px;
+    }
+
+    .bud-exp .budInp {
+        height: 60%;
+        width: 80%;
+        /* background-color: yellow; */
+        gap: 1rem;
+    }
+
+    .bud-exp .input input {
+        width: 100%;
+        height: 30%;
+        padding: 5px;
+        font-size: 1.3rem;
+    }
+
+    .bud-exp .input button,
+    .bud-exp .expInput button {
+        min-width: 100%;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-bottom: 7px;
+    }
+
+    .calcBox {
+        min-height: 10rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        color: var(--white-color);
+    }
+
+    .calcBox .bud_upd div {
+        text-align: start;
+        margin: 0 0px;
+        /* background-color: black; */
+    }
+
+    .calcBox div {
+        text-align: start;
+        margin: 0 10px;
+    }
+
+    .d-u {
+        width: 15%;
+        right: -12%;
+    }
 }
